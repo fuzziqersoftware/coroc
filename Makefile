@@ -9,7 +9,7 @@ else
 	INSTALL_DIR=/usr/local
 endif
 
-all: libcoroc.a BasicTest
+all: libcoroc.a test
 
 install: libcoroc.a
 	mkdir -p $(INSTALL_DIR)/include/coroc
@@ -29,4 +29,4 @@ test: BasicTest
 clean:
 	rm -rf *.dSYM *.o gmon.out libcoroc.a *Test
 
-.PHONY: clean
+.PHONY: clean test
